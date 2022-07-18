@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Poppins:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./day3.css">
+</head>
+<body>
+    <h1>css interview questions</h1>
+    <pre>
+        <h2>1.Difference between flex row and column</h2>
+        *Flex row and Flex column both are the comes under the flex-direction properties of "Flex box".
+        *These properties can be applied to child elements in parent element by setting the display property to flex.  
+        * Flex row: keeps the flex items horizontally i.e,from left to right
+        *Flex column: Keeps the flex items vertically i.e,from top to bottom 
+        <h2>2.Explain inline , internal and external stylesheet</h2>
+        * We can add CSS to HTML page in three ways they are: 
+        1. Inline: we can add inline CSS by using the "style" attribute of the HTML element. This way is mostly used when we need to apply the style to one unique element.  
+           style is having the highest priority among other two and not advisable to use
+          <!-- < p style="color : red" > text < /p>
+        2. Internal: The internal CSS is not the most preferred way but this way is used when we need to apply style for a single page. 
+                Internal CSS added in "head" section  within  "style" tag. 
+            < head >
+                < style >
+                       p { color: red}
+                < /style>
+            < /head>-->
+     
+        3. External:External CSS is most preferred  way to add CSS to Website. 
+                First  of all create a separate CSS file with “.css” extension.
+                Add this file to "head" section of  Html page by using the "link"  tag. 
+                p{
+                    background - color :red
+                 }     
+
+        <h2>3. Justify - content: allows you to do what?</h2>
+        * Justify-content is the property of a 'Flex box'. 
+        It is used to align the flex items in terms of:
+        6 types of values in justify-content
+        
+        justify-content: start
+        
+        justify-content: end
+        
+        justify-content: center
+
+        justify-content: space-between
+        
+        justify-content: space-around
+
+        justify-content: space-evenly
+
+        <h2>4.Difference between absolute and relative positioning </h2>
+        * Absolute and Relative positioning are the position properties in css. 
+        *Absolute positioning:The element is positioned absolute to its first positioned parent. 
+        *Relative positioning:The element is positioned relative to its normal position. 
+        <h2>5.What is grid-template-columns used for?</h2>
+        It is CSS subproperty of grid.How many column should be there in child elements
+
+        Defines how many column should be there in grid
+       
+        grid-template-columns:10px 10px 10px
+
+        Three columns would be created.It takes the values in pixel, percentage,fraction,auto 
+        <h2>6.What is the z-index in CSS?</h2>
+        * z-index:It decides which element will show on top of the other. The first to show, is the one with the greatest index. 
+        * It can take positive values and negative values. 
+        * it works after positioned the elements either it may be relative,absolute or fixed. 
+        <h2>7.What is the difference between padding and margin?</h2>
+        Padding and Margin are the part of box model
+
+        Padding:-Space inside border and content .Padding needs to give +ve value and size of element increases
+        Padding-top:
+
+        Padding-bottom:
+ 
+        Padding-left:
+
+        Padding-right:
+  
+        Margin:-Provides the space between border and near by element.It is used to give space outside the box and margin we can give +ve and -ve value
+
+        Element size does not change just its position changing
+        Margin-top:
+
+        Margin-bottom:
+ 
+        Margin-left:
+
+        Margin-right: 
+        <h2>8.What is box sizing?</h2>
+        *The CSS box-sizing property allows us to include the padding and border in an element's total width and height. 
+           
+            width + padding + border = actual width of an element 
+           
+            height + padding + border = actual height of an element 
+           
+            This means: When you set the width/height of an element, the element often appears bigger than you have set. 
+        <h2>9.What is animation delay?</h2>
+        *Animation delay is the sub property of 'Animation'. 
+        *Animation delay states that how much time need to wait to start the animation. 
+        <h2>10.Which property you will use to merge cells vertically in grid?</h2>
+         vertical grid
+        * grid-column-start 
+        * grid-column-end 
+        
+        <h2>11.Which property you will use to merge cells horizontally in grid?</h2>
+        Horizontal grid
+        * grid-row-start 
+        * grid-row-end 
+        <h2>12.Explain CSS box model</h2>
+        * All the elements are considered as boxes.It tells about the design and layout of the elements. 
+        * It contains:Margins:area outside the border 
+         :- Borders:border that goes around the padding and content 
+ 
+         :- Padding:area around the content 
+ 
+         :- Actual Content:Displays the content of the box like text and images  
+        <h2>13.what is the difference between display none and visibility hidden?</h2>
+        *  Both are used to hide elements: 
+
+        Display none:Used to hide element ,effects the layout of the web page and it takes up the space
+        
+        visibility hidden:Used to hide element without deleting them does not takes space.
+    </pre>
+
+    <h2>Implementation</h2>
+    <h3>Replicating the button on Masthead of prepbytes</h3>
+    <button>Enroll now</button>
+    <h3>write a text and add any google font</h3>
+    <p class="one">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="two">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <h3>Create a box and increase its widthon hover, add transition on hover</h3>
+    <div class="hover"></div>
+    <h3>Create a circle using border radius</h3>
+    <div class="circle"></div>
+    <h3>write a code to show implementation of media queries</h3>
+    <div class="media"></div>
+    <h3>write a code to show any animation example</h3>
+    <div class="animation"></div>
+    <pre>
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(10, 73, 83);
+            animation: animi 5s infinite linear;
+            margin-left: 100px;
+        }
+        @keyframes animi {
+            0%{
+                transform:rotate(30deg);
+                border-radius: 10%;
+            }
+            25%{
+                transform:rotate(90deg);
+                background-color:cadetblue;
+                border-radius: 20%;
+            }
+            50%{ 
+                transform:rotate(180deg);
+                background-color:chocolate;
+                border-radius: 30%;
+            }
+            75%{
+                transform:rotate(270deg);
+                background-color:violet;
+                border-radius: 40%;
+            }
+            100%{
+                transform:rotate(360deg);
+                background-color:tomato;
+                border-radius: 50%;
+            }
+        }
+    </pre>
+</body>
+</html>
