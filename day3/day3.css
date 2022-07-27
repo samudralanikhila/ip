@@ -1,0 +1,80 @@
+button{
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgb(26, 166, 173);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.one{
+    font-family: 'Poppins', sans-serif;
+}
+.two{
+    font-family: 'Edu TAS Beginner'
+}
+.hover{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border:1px rgb(88, 51, 6) dotted;
+}
+.hover:hover{
+    width: 400px;
+    transition: 4s linear;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(224, 178, 217);
+    border-radius: 50%;
+}
+.media{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border:1px rgb(88, 51, 6) dotted;
+}
+@media screen and (min-width:400px) and (max-width:1000px){
+    .media{
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        border-radius: 50%;
+        border: 50px solid darksalmon;
+    }
+}
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 73, 83);
+    animation: animi 5s infinite linear;
+    margin-left: 100px;
+}
+@keyframes animi {
+    0%{
+        transform:rotate(30deg);
+        border-radius: 10%;
+    }
+    25%{
+        transform:rotate(90deg);
+        background-color:cadetblue;
+        border-radius: 20%;
+    }
+    50%{ 
+        transform:rotate(180deg);
+        background-color:chocolate;
+        border-radius: 30%;
+    }
+    75%{
+        transform:rotate(270deg);
+        background-color:violet;
+        border-radius: 40%;
+    }
+    100%{
+        transform:rotate(360deg);
+        background-color:tomato;
+        border-radius: 50%;
+    }
+}
+
